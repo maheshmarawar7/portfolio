@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mahesh</title>
+
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My</span>Portfolio</a>
+            <ul >
+                <li><a href="http://127.0.0.1:5500/myskills.html" >Skills</a></li>
+                <li><a href="" >About</a></li>
+                <li><a href="" >work</a></li>
+                <li><a href="" >contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey</h3>
+            <h2>I am <span id="text"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam exercitationem sapiente
+                 soluta quod, nostrum at non harum consequatur, provident labore numquam aliquam debitis.</p>
+                 <button>
+                    hire me 
+                   </button>
+                   <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>
+                    let's chat
+                   </button>
+
+        </div>
+        <img src="colors.png" class="colors">
+        <img src="mahesh2.png" class="men">
+        <ul class="sci">
+        <li><a href="https://www.facebook.com/mahesh.marawar.71"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/__mahesh._07/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/mahesh-marawar-a18008237"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://twitter.com/maheshmarawar7?t=FBmlCl7vON9j41nfUBwvzQ&s=08"><ion-icon name="logo-twitter"></ion-icon></a></li>  </ul>
+        <div class="darkmode"><ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon></div>
+    </section><script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        let typingText=new Typed("#text",{
+            strings : ["Mahesh","Ui/Ux Desighner","Frontend Developer"],
+            loop:true,
+            typeSpeed:100,
+            backspeed:50,
+            backdelay:1000,
+        })
+        let banner=document.querySelector('.banner');
+        let darkmode=document.querySelector('.darkmode');
+        darkmode.onclick= function(){
+            banner.classList.toggle('night')
+        }
+
+  </script>
+    
+</body>
+</html>
